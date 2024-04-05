@@ -1,18 +1,18 @@
 import React from "react";
 import "./componentStyles/FormSelection.css";
+import { Button } from "flowbite-react";
 const FormSelection = () => {
   return (
-    <div>
-      <ul className="grid grid-rows-4 grid-flow-col w-15 justify-center m-5">
-        <li className="formSelectionList">Loc#1</li>
-        <li className="formSelectionList">Loc#2</li>
-        <li className="formSelectionList">Loc#3</li>
-        <li className="formSelectionList">Loc#4</li>
-        <li className="formSelectionList">Loc#5</li>
-        <li className="formSelectionList">Loc#6</li>
-        <li className="formSelectionList">Loc#7</li>
-        <li className="formSelectionList">Loc#8</li>
-      </ul>
+    <div className="flex flex-col w-1/4 mx-auto gap-2">
+      <h2>Select your location</h2>
+      <div className="grid grid-cols-2 grid-flow-row gap-4">
+        <Button>Loc#1</Button>
+        <Button>Loc#1</Button>
+        <Button>Loc#1</Button>
+        <Button>Loc#1</Button>
+        <Button>Loc#1</Button>
+        <Button>Loc#1</Button>
+      </div>
     </div>
   );
 };
