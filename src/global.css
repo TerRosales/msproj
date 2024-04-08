@@ -5,3 +5,16 @@
 .formSelectionList {
   @apply bg-blue-50 px-6 m-1 hover:bg-blue-200;
 }
+
+body {
+  @apply mx-auto;
+}
+
+[data-testid="flowbite-card"] {
+  transition:transform 0.2s ease-in-out;
+}
+
+[data-testid="flowbite-card"]:hover {
+  
+  transform: translateY(-10px);
+}

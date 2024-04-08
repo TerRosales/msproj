@@ -1,11 +1,15 @@
 import React from "react";
+import { Footer } from "flowbite-react"
 
-const Footer = () => {
+const Foot = () => {
   return (
-    <footer className="text-sm">
-      <span>@ Test App - Terrence.dev</span>
-    </footer>
+    <Footer container className="mt-auto">
+      <div className="w-full text-center">
+        <Footer.Divider />
+        <Footer.Copyright href="#" by="Terrence.dev" year={2024} />
+      </div>
+    </Footer>
   );
 };
 
-export default Footer;
+export default Foot;
