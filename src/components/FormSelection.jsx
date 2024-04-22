@@ -1,5 +1,6 @@
 import React,{useState} from "react";
 import "./componentStyles/FormSelection.css";
+import "./componentStyles/FormSelection.css"
 import { Link } from "react-router-dom"
 import { Button, Modal, Select, Label, TextInput, Datepicker } from "flowbite-react";
 const FormSelection = () => {
@@ -11,15 +12,15 @@ const FormSelection = () => {
     setInspectorName('');
   }
   return (
-    <div className="flex flex-col w-1/4 mx-auto gap-2">
+    <div className="flex flex-col w-1/4 mx-auto gap-2 items-center">
       <h2>Select your location</h2>
-      <div className="grid grid-cols-2 grid-flow-row gap-4">
-        <Button onClick={() => setOpenModal(true)}>Loc#1</Button>
-        <Button onClick={() => setOpenModal(true)}>Loc#1</Button>
-        <Button onClick={() => setOpenModal(true)}>Loc#1</Button>
-        <Button onClick={() => setOpenModal(true)}>Loc#1</Button>
-        <Button onClick={() => setOpenModal(true)}>Loc#1</Button>
-        <Button onClick={() => setOpenModal(true)}>Loc#1</Button>
+      <div className="flex flex-col gap-4">
+        <Button className="locationSelector" color="blue" outline onClick={() => setOpenModal(true)}>Loc#1</Button>
+        <Button className="locationSelector" color="blue" outline onClick={() => setOpenModal(true)}>Loc#1</Button>
+        <Button className="locationSelector" color="blue" outline onClick={() => setOpenModal(true)}>Loc#1</Button>
+        <Button className="locationSelector" color="blue" outline onClick={() => setOpenModal(true)}>Loc#1</Button>
+        <Button  className="locationSelector" color="blue" outline onClick={() => setOpenModal(true)}>Loc#1</Button>
+        <Button className="locationSelector" color="blue" outline onClick={() => setOpenModal(true)}>Loc#1</Button>
       </div>
       <Modal show={openModal} size="md" onClose={onCloseModal} popup>
         <Modal.Header />

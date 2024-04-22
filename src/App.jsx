@@ -14,7 +14,10 @@ function App() {
         <Routes>
           <Route path="/" element={<FormSelection />}/>
           <Route path="/location-1-page" element={<LocationPage />}/>
-          <Route path="/inspection-page" element={<InspectionPage />}/>
+          <Route path="/inspection-page" element={<InspectionPage />}>
+            <Route path="training" eleme/>
+            <Route path="parts-list" />
+          </Route>
         </Routes>
       </div>
       <Foot />

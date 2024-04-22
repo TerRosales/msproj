@@ -1,0 +1,7 @@
+[data-testid="flowbite-card"] {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  [data-testid="flowbite-card"]:hover {
+    transform: translateY(-7px);
+  }
