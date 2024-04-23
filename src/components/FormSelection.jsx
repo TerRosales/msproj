@@ -13,7 +13,7 @@ const FormSelection = () => {
   }
   return (
     <div className="flex flex-col w-1/4 mx-auto gap-2 items-center">
-      <h2>Select your location</h2>
+      <h2 className="font-semibold text-[20px]">Select location</h2>
       <div className="flex flex-col gap-4">
         <Button className="locationSelector" color="blue" outline onClick={() => setOpenModal(true)}>Loc#1</Button>
         <Button className="locationSelector" color="blue" outline onClick={() => setOpenModal(true)}>Loc#1</Button>
@@ -59,7 +59,7 @@ const FormSelection = () => {
               </div>
             </div>
             <div className="w-full">
-              <Link to="/location-1-page"><Button onClick={onCloseModal}>Assign Location</Button></Link>
+              <Link to="/location-1-page"><Button color="blue" onClick={onCloseModal}>Assign Location</Button></Link>
             </div>
           </div>
         </Modal.Body>

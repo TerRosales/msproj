@@ -8,7 +8,7 @@ import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="text-2xl text-blue-950 font-semibold justify-center text-center py-8 flex flex-col min-h-screen">
+    <div className="">
       <Header />
       <div className="w-full h-full">
         <Routes>
